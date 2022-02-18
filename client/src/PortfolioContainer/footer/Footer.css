@@ -19,7 +19,7 @@
   height: 50px;
   color: aliceblue;
   font-size: 24px;
-  background-color: tomato;
+  background-color: var(--green1);
   border-radius: 10px;
   border: none;
 }
