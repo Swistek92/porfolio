@@ -137,7 +137,6 @@
 .resume-sub-heading {
   font-size: 14px;
   font-family: 'Poppins SemiBold';
-  color: rgb(0, 0, 0);
   margin: 10px 0 0 0;
 }
 
@@ -148,6 +147,7 @@
 
 .heading-date {
   background-color: rgb(4, 119, 4);
+  opacity: 30%;
   padding: 4px 12px;
   font-size: 14px;
   border-radius: 14px;
