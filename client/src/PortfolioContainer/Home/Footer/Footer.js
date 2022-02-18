@@ -5,10 +5,10 @@ export default function footer() {
   return (
     <div className='footer-container'>
       <div className='footer-parent'>
-        <img
+        {/* <img
           src={require('../../../assets/Home/shape-bg.png').default}
           alt='you have problem with the '
-        />
+        /> */}
         <p>dsadasdasd</p>
       </div>
     </div>
