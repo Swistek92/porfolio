@@ -79,7 +79,7 @@
     cursor: pointer;
     margin: 0px 10px;
     color: red;
-    opacity: 70%;
+    z-index: 10000;
   }
   .show-hamburger-options {
     left: 0;
