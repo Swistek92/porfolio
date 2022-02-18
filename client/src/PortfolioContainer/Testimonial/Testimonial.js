@@ -7,10 +7,10 @@ import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
 import './Testimonial.css';
-import lady from '../../assets/Testimonial/alien.jpg';
-import mike from '../../assets/Testimonial/alien.jpg';
-import man from '../../assets/Testimonial/alien.jpg';
-import daisy from '../../assets/Testimonial/alien.jpg';
+import lady from '../../../src/img/Testimonial/lady.png';
+import mike from '../../../src/img/Testimonial/mike.png';
+import man from '../../../src/img/Testimonial/man.png';
+import shape from '../../../src/img/Testimonial/shape-bg.png';
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -62,15 +62,9 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      text ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries, but also
-                      the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum
+                      I patronized Ehizeex and when He delivered, I honestly
+                      fell in love with the project He is a very honest guy and
+                      he delivers ontime.
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -92,9 +86,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={lady} alt='opp' />
-                    <h5> text ever since </h5>
-                    <p>text ever since </p>
+                    <img src={lady} alt='no internet connection'></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO InansGlobal</p>
                   </div>
                 </div>
               </div>
@@ -104,15 +98,9 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      text ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries, but also
-                      the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum
+                      It was nice hiring this guy for my e-commerce project.He
+                      delivered even more than i can imagine. I recommend him
+                      for you.
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -134,27 +122,20 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={mike} alt='opp' />
-                    <h5> text ever since </h5>
-                    <p>text ever since</p>
+                    <img src={mike} alt='no internet connection'></img>
+                    <h5>Mikel</h5>
+                    <p>CEO MikeTech</p>
                   </div>
                 </div>
               </div>
-
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      text ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries, but also
-                      the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum
+                      When he delivered my job, my head spinned, it was so nice
+                      and he implemented every functionality i requested for.
+                      Thank you.
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -176,27 +157,20 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={man} alt='opp' />
-                    <h5>text ever since</h5>
-                    <p>text ever since</p>
+                    <img src={lady} alt='no internet connection'></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO InansGlobal</p>
                   </div>
                 </div>
               </div>
-
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      text ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries, but also
-                      the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum
+                      This guy is incredibly awesome, I hired him and when He
+                      delivered, I honestly fell in love with the project. He is
+                      indeed a great guy,
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -218,9 +192,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={daisy} alt='opp' />
-                    <h5>text ever since </h5>
-                    <p>text ever since</p>
+                    <img src={man} alt='no internet connection'></img>
+                    <h5>John Smith</h5>
+                    <p>Bnaker</p>
                   </div>
                 </div>
               </div>
@@ -228,6 +202,9 @@ export default function Testimonial(props) {
           </div>
         </div>
       </section>
+      {/* <div className="footer-image">
+        <img src={shape} alt="Phot0 not responding" />
+      </div> */}
     </div>
   );
 }
