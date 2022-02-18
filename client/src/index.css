@@ -1,50 +1,50 @@
 @font-face {
-  font-family: "Poppins Medium";
+  font-family: 'Poppins Medium';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
+  src: url('./assets/fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Regular";
+  font-family: 'Poppins Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Bold";
+  font-family: 'Poppins Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
+  src: url('./assets/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins ExtraBold";
+  font-family: 'Poppins ExtraBold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Light";
+  font-family: 'Poppins Light';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
+  src: url('./assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Thin";
+  font-family: 'Poppins Thin';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
+  src: url('./assets/fonts/Poppins-Thin.ttf');
 }
 
 * {
@@ -52,15 +52,17 @@
 }
 
 body {
+  background-image: url('./images/space.jpg');
+  background-image: cover;
   margin: 0;
   overflow-y: overlay;
-  font-family: "Poppins Regular";
+  font-family: 'Poppins Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -87,7 +89,7 @@ body ::-webkit-scrollbar-thumb {
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
 }
 
 .btn:active {
