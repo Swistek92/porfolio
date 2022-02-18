@@ -9,7 +9,6 @@ export default function footer() {
           src={require('../../../assets/Home/shape-bg.png').default}
           alt='you have problem with the '
         /> */}
-        <p>dsadasdasd</p>
       </div>
     </div>
   );
