@@ -46,11 +46,11 @@
 }
 .testimonial-section .testi-item p .fa-quote-left {
   margin-right: 5px;
-  color: tomato;
+  color: rgb(4, 4, 85);
 }
 .testimonial-section .testi-item p .fa-quote-right {
   margin-left: 5px;
-  color: tomato;
+  color: rgb(4, 4, 85);
 }
 
 .testimonial-section .testi-comment .stars {
