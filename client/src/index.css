@@ -54,6 +54,7 @@
 body {
   background-image: url('./images/space.jpg');
   background-size: contain;
+  color: rgb(11, 175, 11);
   margin: 0;
   overflow-y: overlay;
   font-family: 'Poppins Regular';
