@@ -30,7 +30,7 @@ export default function Resume(props) {
           <span>{props.heading ? props.heading : ''}</span>
           {props.fromDate && props.toDate ? (
             <div className='heading-date'>
-              {props.fromDate + '_' + props.toDate}
+              {props.fromDate + '-' + props.toDate}
             </div>
           ) : (
             <div></div>
