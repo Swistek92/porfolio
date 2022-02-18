@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   height: 149px;
-  color: white;
+  color: var(--white);
 }
 .header-parent {
   display: flex;
@@ -10,13 +10,12 @@
   justify-content: space-around;
   height: 100%;
   width: 70%;
-  color: white;
+  color: var(--white);
 }
 .header-logo {
-  font-size: 25px;
-  margin-right: 10px;
-  font-family: 'Poppins ExtraBold';
-  color: #07cc07;
+  font-size: 50px;
+  font-family: "Poppins ExtraBold";
+  color: var(--white);
 }
 .header-options {
   display: flex;
@@ -29,14 +28,14 @@
 }
 .header-hamburger {
   display: none;
-  color: #07cc07;
+  color: var(--white);
 }
 .header-option-seperator {
   margin: 0 50px 0 0;
   color: var(--white);
 }
 .selected-header-option {
-  color: #07cc07;
+  color: var(--dark-orange);
 }
 
 /*IPAD PRO RESPONSIVENESS*/
@@ -64,10 +63,9 @@
     height: 100vh;
     width: 100%;
     justify-content: space-around;
-    background-color: var(--green2);
+    background-color: #1f2235;
     z-index: 1000;
-    opacity: 0.3;
-    transition: all 0.8s ease-out;
+    opacity: 0.5;
   }
   .header-option-seperator {
     margin: 0;

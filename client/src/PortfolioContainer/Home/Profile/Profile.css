@@ -5,55 +5,51 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
+  background-image: url("../../../assets/Home/bg.jpg");
 }
 .profile-parent {
   display: flex;
   align-items: center;
-  color: var(--green1);
+  color: aliceblue;
 }
 .profile-details-name {
   font-size: 24px;
-  font-family: 'Poppins SemiBold';
+  font-family: "Poppins SemiBold";
 }
-
 .profile-details-role {
   display: flex;
   flex-direction: column;
   margin: 14px 0 24px 0;
 }
-
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: cursive;
+  font-family: "cursive";
 }
-
 .primary-text {
-  color: var(--green2);
+  color: (--white);
 }
-
 .highlighted-text {
-  color: var(--green2);
+  color: #ff5823;
 }
-
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
-  font-family: 'Poppins Light';
+  font-family: "Poppins Light";
 }
-
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
+  border-radius: 12px solid white;
 }
-
 .profile-options .highlighted-btn:hover {
   margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
 }
-
 .profile-picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 2px 2px 0px var(--green2);
+  box-shadow: 0 1px 0px 0px var(--white);
   border-radius: 50%;
   height: 380px;
   width: 380px;
@@ -62,61 +58,51 @@
 .profile-picture-background {
   height: 92%;
   width: 92%;
-  background-image: url('../../../assets//Home/profilephoto.jpg');
-  background-size: cover;
   border-radius: 50%;
+  background-image: url("../../../assets/Home//profilephoto.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .profile-picture-background:hover {
-  /* transform: scale(1.07); */
+  transform: scale(1.07);
   transition: 1s ease-out;
 }
 
-.colz .colz-icon {
-  color: var(--green1);
+.colz .colz-icon i {
+  color: white;
   padding: 8px;
   padding-left: 0px;
-  /* margin: 8px; */
 }
-.colz .colz-icon i:hover {
-  transform: scale(1.9);
-}
-
-.colz .colz-icon i {
-  margin: 3px;
+.colz .cols-icon i:hover {
+  transform: scale(1.5);
 }
 
-@media screen and (max-width: 1100px) {
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
   .profile-picture {
     margin: 0 0px 0 80px;
   }
-
   .profile-details-name {
     font-size: 20px;
   }
-
   .profile-details-role .primary-text {
-    font-size: 12px;
+    font: 12px;
   }
-
   .profile-options .btn {
     width: 120px;
     padding: 11px 0;
     z-index: 700;
   }
 }
-
-@media screen and (max-width: 910px) {
+@media only screen and (max-width: 910px) {
   .profile-picture {
+    margin: 0 0 0 4px;
     height: 320px;
     width: 320px;
-    margin: 0 0 0 4px;
   }
 }
-
-@media screen and (max-width: 810px) {
+@media only screen and (max-width: 810px) {
   .profile-picture {
     margin: 0 !important;
   }
@@ -128,32 +114,25 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .profile-details {
-    margin: 25 0 0;
+  .proflie-details {
+    margin: 25px 0 0;
   }
-
   .profile-options .highlighted-btn {
     margin: 0 !important;
   }
-
   .profile-details-name,
   .profile-details-role {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 466px) {
+@media only screen and (max-width: 375px) {
   .profile-picture {
     height: 275px;
     width: 275px;
     margin-top: -90px;
   }
-  .profile-details {
-    width: 90%;
-  }
-  .profile-options button {
-    margin-left: 20px;
-    margin-right: 20px;
+  .proflie-details {
+    width: 95%;
   }
 }
