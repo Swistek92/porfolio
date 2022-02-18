@@ -84,11 +84,12 @@
   height: 100%;
   z-index: 1;
   background-color: rgb(4, 4, 85);
+  opacity: 50%;
   position: absolute;
 }
 
 .selected-bullet {
-  color: var(--white);
+  color: grey;
   width: 100%;
 }
 
@@ -172,7 +173,7 @@
   position: relative;
   height: 15px;
   width: 70%;
-  background-color: #ff5823;
+  background-color: grey;
 }
 
 .skill-percentage .active-percentage-bar {
