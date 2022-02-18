@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
-import "./AboutMe.css";
+import React, { useEffect } from 'react';
+import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
+import ScrollService from '../../utilities/ScrollService';
+import Animations from '../../utilities/Animations';
+import './AboutMe.css';
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -14,23 +14,24 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+      'Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency.With an aspiration to be a strong professional full stack developer ...',
     highlights: {
       bullets: [
-        "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
-        "React and React Native",
-        "Redux for State Mnanagement",
-        "Building REST API",
-        "Managing database",
+        'full stack web',
+        'interactive front end as per the design',
+        'react',
+        'redux for state managment',
+        'build rest api',
+        'managing database',
       ],
-      heading: "Here are a Few Highlights:",
+      heading: 'Here are a few Highlights:',
     },
   };
+
   const renderHighlight = () => {
     return SCREEN_CONSTSANTS.highlights.bullets.map((value, i) => (
-      <div className="highlight" key={i}>
-        <div className="highlight-blob"></div>
+      <div className='highlight' key={i}>
+        <div className='highlight-blob'></div>
         <span>{value}</span>
       </div>
     ));
@@ -38,33 +39,33 @@ export default function AboutMe(props) {
 
   return (
     <div
-      className="about-me-container screen-container fade-in"
-      id={props.id || ""}
+      className='about-me-container screen-container fade-in'
+      id={props.id || ''}
     >
-      <div className="about-me-parent">
-        <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
-        <div className="about-me-card">
-          <div className="about-me-profile"></div>
-          <div className="about-me-details">
-            <span className="about-me-description">
+      <div className='about-me-parent'>
+        <ScreenHeading title={'About Me'} subHeading={'why choose me?'} />
+        <div className='about-me-card'>
+          <div className='about-me-profile'></div>
+          <div className='about-me-details'>
+            <span className='about-me-description'>
               {SCREEN_CONSTSANTS.description}
             </span>
-            <div className="about-me-highlights">
-              <div className="highlight-heading">
+            <div className='about-me-highlights'>
+              <div className='highlight-heading'>
                 <span>{SCREEN_CONSTSANTS.highlights.heading}</span>
               </div>
               {renderHighlight()}
             </div>
-            <div className="about-me-options">
+            <div className='about-me-options'>
               <button
-                className="btn primary-btn"
+                className='btn primary-btn'
                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >
-                {" "}
-                Hire Me{" "}
+                {' '}
+                Hire me
               </button>
-              <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
-                <button className="btn highlighted-btn">Get Resume</button>
+              <a href='Piotrcv.pdf' download='PiotrCv.pdf'>
+                <button className='btn highlighted-btn'>Get Resume</button>
               </a>
             </div>
           </div>

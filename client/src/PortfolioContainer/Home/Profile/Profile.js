@@ -1,75 +1,84 @@
-import React from "react";
-import Typical from "react-typical";
-import ScrollService from "../../../utilities/ScrollService";
-import "./Profile.css";
+import React from 'react';
+import Typical from 'react-typical';
+import './Profile.css';
+import ScrollService from '../../../utilities/ScrollService';
 
 export default function Profile() {
   return (
-    <div className="profile-container">
-      <div className="profile-parent">
-        <div className="profile-details">
-          <div className="colz">
-            <div className="colz-icon">
-              <a href="https://web.facebook.com/?_rdc=1&_rdr">
-                <i className="fa fa-facebook-square" />
+    <div className='profile-container'>
+      <div className='profile-parent'>
+        <div className=' profile-details'>
+          <div className='colz'>
+            <div className='colz-icon'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.facebook.com/Swistekk/'
+              >
+                <i className='fa fa-facebook-square'></i>
               </a>
-              <a href="#">
-                <i className="fa fa-google-plus-square" />
+              <a href='google.com'>
+                <i className='fa fa-google-plussquare'></i>
               </a>
-              <a href="https://www.instagram.com/instructor_ehizeex/">
-                <i className="fa fa-instagram" />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://github.com/Swistek92'
+              >
+                <i class='fa fa-github' aria-hidden='true'></i>
               </a>
-              <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
-                <i className="fa fa-youtube-square" />
-              </a>
-              <a href="https://twitter.com/Ehiedu_baba">
-                <i className="fa fa-twitter" />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.linkedin.com/in/piotr-swistowski-b47578212/'
+              >
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i>
               </a>
             </div>
           </div>
-          <div className="profile-details-name">
-            <span className="primary-text">
-              {" "}
-              Hello, I'M <span className="highlighted-text">Ehiedu</span>
+          <div className='profile-details-name'>
+            <span className='primary-text'>
+              Hello im <span className='highlighted-text'> Piotrek </span>
             </span>
           </div>
-          <div className="profile-details-role">
-            <span className="primary-text">
-              {" "}
+          <div className='profile-details-role'>
+            <span className='primary text'>
               <h1>
+                {''}
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Enthusiastic Dev 😎",
+                    'Ethusiastic Dev 😎 ',
                     1000,
-                    "Full stack Developer 💻",
+                    'Full Stack Dev 💻',
                     1000,
-                    "Mern stack Dev 📱",
+                    'MERN Dev 📱',
                     1000,
-                    "Cross Platform Dev 🔴",
-                    1000,
-                    "React/React Native 🌐",
+                    'React 🌐',
                     1000,
                   ]}
                 />
               </h1>
-            </span>
-            <span className="profile-role-tagline">
-              Knack of building applications with front and back end operations.
+              <span className='profile-role-tagline'>
+                Construction of applications with front and back end operations{' '}
+              </span>
             </span>
           </div>
-
-          <div className="profile-options">
-            <button className="btn primary-btn"
-            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-            > Hire Me </button>
-            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
+          <div className='profile-options'>
+            <button
+              className='btn primary-btn'
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+            >
+              {' '}
+              Hire me
+            </button>
+            <a href='Piotrcv.pdf' download='piotr.pdf'>
+              <button className='btn highlighted-btn'>Get Resume</button>
             </a>
           </div>
         </div>
-        <div className="profile-picture">
-          <div className="profile-picture-background"></div>
+        <div className='profile-picture'>
+          <div className='profile-picture-background'></div>
         </div>
       </div>
     </div>
