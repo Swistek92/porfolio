@@ -62,9 +62,11 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      t is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -87,8 +89,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <h5>Daisy </h5>
+                    <p>CEO </p>
                   </div>
                 </div>
               </div>
@@ -98,9 +100,11 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      It was nice hiring this guy for my e-commerce project.He
-                      delivered even more than i can imagine. I recommend him
-                      for you.
+                      t is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -133,9 +137,11 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      When he delivered my job, my head spinned, it was so nice
-                      and he implemented every functionality i requested for.
-                      Thank you.
+                      t is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -158,8 +164,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <h5>Jony </h5>
+                    <p>CEO </p>
                   </div>
                 </div>
               </div>
@@ -168,9 +174,11 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      t is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -193,8 +201,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={man} alt='no internet connection'></img>
-                    <h5>John Smith</h5>
-                    <p>Bnaker</p>
+                    <h5>Johny </h5>
+                    <p>CEO</p>
                   </div>
                 </div>
               </div>
