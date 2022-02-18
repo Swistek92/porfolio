@@ -52,8 +52,8 @@
 }
 
 body {
-  /* background-image: url('./assets//img/space.jpg'); */
-  background-color: var(--black);
+  background-image: url('./images/space.jpg');
+  /* background-color: var(--black); */
   background-size: contain;
   opacity: 90%;
   color: var(--green1);
