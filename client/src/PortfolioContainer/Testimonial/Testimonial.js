@@ -62,10 +62,15 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      ტექსტის ნაგლეჯს იმეორებენ ხოლმე, ამიტომ ეს პირველი
-                      ნამდვილი გენერატორია. იგი რთული და მართებული სტრუქტურის
-                      წინადადებების ასაწყობად 200-მდე ლათინური სიტყვისგან
-                      შემდგარ ლექსიკონს იყენე
+                      text ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries, but also
+                      the leap into electronic typesetting, remaining
+                      essentially unchanged. It was popularised in the 1960s
+                      with the release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -88,8 +93,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={lady} alt='opp' />
-                    <h5> არასოდეს </h5>
-                    <p>სიტყვების </p>
+                    <h5> text ever since </h5>
+                    <p>text ever since </p>
                   </div>
                 </div>
               </div>
@@ -99,11 +104,15 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      평화통일정책의 수립에 관한 대통령의 자문에 응하기 위하여
-                      민주평화통일자문회의를 둘 수 있다. 모든 국민은 언론·출판의
-                      자유와 집회·결사의 자유를 가진다. 국가는 균형있는
-                      국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고.
-                      그 정치적 중립성은 준수된다.
+                      text ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries, but also
+                      the leap into electronic typesetting, remaining
+                      essentially unchanged. It was popularised in the 1960s
+                      with the release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -126,8 +135,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={mike} alt='opp' />
-                    <h5> 간첩죄의 </h5>
-                    <p>신체의</p>
+                    <h5> text ever since </h5>
+                    <p>text ever since</p>
                   </div>
                 </div>
               </div>
@@ -137,12 +146,15 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
-                      العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم
-                      ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات
-                      محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع
-                      مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
-                      مقاطع
+                      text ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries, but also
+                      the leap into electronic typesetting, remaining
+                      essentially unchanged. It was popularised in the 1960s
+                      with the release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -165,8 +177,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={man} alt='opp' />
-                    <h5> مضة في نص لوريم إيبسو </h5>
-                    <p>إيبسوم </p>
+                    <h5>text ever since</h5>
+                    <p>text ever since</p>
                   </div>
                 </div>
               </div>
@@ -176,9 +188,15 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      Вел вулпутате инцоррупте ин, долор импердиет елаборарет ад
-                      еум. Но яуи молестие перицулис омиттантур, цлита нумяуам
-                      цу пер, легере путент детерруиссет ан сеа
+                      text ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries, but also
+                      the leap into electronic typesetting, remaining
+                      essentially unchanged. It was popularised in the 1960s
+                      with the release of Letraset sheets containing Lorem Ipsum
+                      passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -201,8 +219,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img src={daisy} alt='opp' />
-                    <h5> утрояуе салутанди </h5>
-                    <p>оффициис </p>
+                    <h5>text ever since </h5>
+                    <p>text ever since</p>
                   </div>
                 </div>
               </div>
