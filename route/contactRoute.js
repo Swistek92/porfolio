@@ -1,30 +1,31 @@
-const router = require("express").Router();
-const nodemailer = require("nodemailer");
+const router = require('express').Router();
+const nodemailer = require('nodemailer');
 
-router.post("/contact", (req, res) => {
+require('dotenv').config();
+
+router.post('/contact', (req, res) => {
   let data = req.body;
   if (
     data.name.length === 0 ||
     data.email.length === 0 ||
     data.message.length === 0
   ) {
-    return res.json({ msg: "Please Fill All The Fields!" });
+    return res.json({ msg: 'Please Fill All The Fields!' });
   }
 
   let smtpTransporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: 'Gmail',
     port: 465,
     auth: {
-      user: "edubabadigital@gmail.com",
-      pass: "use-your-correct-password-here",
+      user: 'swistek.porfolio@gmail.com',
+      pass: process.env.password,
     },
   });
   let mailOptions = {
     from: data.email,
-    to: "edubabadigital@gmail.com",
+    to: 'swistek.porfolio@gmail.com',
     subject: `message from ${data.name}`,
     html: `
-
             <h3>Informations<h3/>
             <ul>
             <li>Name: ${data.name}<li/>
@@ -38,10 +39,10 @@ router.post("/contact", (req, res) => {
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
-        return res.status(400).json({ msg: "Please Fill All The Fields!" });
-      res.status(200).json({ msg: "Thank You For Contacting Ehizeex." });
+        return res.status(400).json({ msg: 'Please Fill All The Fields!' });
+      res.status(200).json({ msg: 'Thank You For Contacting Piotreck .' });
     } catch (error) {
-      if (error) return res.status(500).json({ msg: "There is server error" });
+      if (error) return res.status(500).json({ msg: 'There is server error' });
     }
   });
 });
