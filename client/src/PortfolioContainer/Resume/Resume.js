@@ -27,7 +27,7 @@ export default function Resume(props) {
       <div className='resume-heading'>
         <div className='resume-main-heading'>
           <div className='heading-bullet'></div>
-          <span>{props.heading ? props.heading : ''}</span>
+          <p className='resume-p'> {props.heading ? props.heading : ''} </p>
           {props.fromDate && props.toDate ? (
             <div className='heading-date'>
               {props.fromDate + '-' + props.toDate}
