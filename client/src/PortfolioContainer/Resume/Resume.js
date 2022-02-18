@@ -3,14 +3,9 @@ import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
 import './Resume.css';
-import education from '../../assets/Resume/education.svg';
-import workHistory from '../../assets/Resume/work-history.svg';
-import programmingSkills from '../../assets/Resume/programming-skills.svg';
-import projects from '../../assets/Resume/projects.svg';
-import interests from '../../assets/Resume/interests.svg';
-// `}
 
-export default function Resume(props) {
+const Resume = (props) => {
+  /* STATES */
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
@@ -22,6 +17,7 @@ export default function Resume(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+  /* REUSABLE MINOR COMPONENTS */
   const ResumeHeading = (props) => {
     return (
       <div className='resume-heading'>
@@ -30,7 +26,7 @@ export default function Resume(props) {
           <span>{props.heading ? props.heading : ''}</span>
           {props.fromDate && props.toDate ? (
             <div className='heading-date'>
-              {props.fromDate + '_' + props.toDate}
+              {props.fromDate + '-' + props.toDate}
             </div>
           ) : (
             <div></div>
@@ -46,50 +42,73 @@ export default function Resume(props) {
     );
   };
 
+  /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: 'Education', logoSrc: education },
-    { label: 'Work History', logoSrc: workHistory },
-    { label: 'Programming Skills', logoSrc: programmingSkills },
-    { label: 'Projects', logoSrc: projects },
-    { label: 'Interests', logoSrc: interests },
+    { label: 'Education', logoSrc: 'education.svg' },
+    { label: 'Work History', logoSrc: 'work-history.svg' },
+    { label: 'Programming Skills', logoSrc: 'programming-skills.svg' },
+    { label: 'Projects', logoSrc: 'projects.svg' },
+    { label: 'Interests', logoSrc: 'interests.svg' },
   ];
+
+  //here we have
   const programmingSkillsDetails = [
-    { skill: 'JavaScript', ratingPercentage: 60 },
-    { skill: 'TypeScript', ratingPercentage: 50 },
-    { skill: 'React JS', ratingPercentage: 60 },
-    { skill: 'Express JS', ratingPercentage: 60 },
-    { skill: 'Node JS', ratingPercentage: 60 },
-    { skill: 'Mongo Db', ratingPercentage: 50 },
-    { skill: 'Docker', ratingPercentage: 30 },
+    { skill: 'JavaScript', ratingPercentage: 85 },
+    { skill: 'React JS', ratingPercentage: 85 },
+    { skill: 'React Native', ratingPercentage: 85 },
+    { skill: 'Express JS', ratingPercentage: 89 },
+    { skill: 'Node JS', ratingPercentage: 89 },
+    { skill: 'Mongo Db', ratingPercentage: 70 },
+    { skill: 'Core Java', ratingPercentage: 80 },
     { skill: 'HTML', ratingPercentage: 80 },
     { skill: 'CSS', ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
-      title: 'MERN eCommerce',
-      duration: { fromDate: '2021', toDate: '2021' },
+      title: 'Personal Portfolio Website',
+      duration: { fromDate: '2020', toDate: '2021' },
       description:
-        'An ecommerce application designed to sell products online with payment system integration',
+        'A Personal Portfolio website to showcase all my details and projects at one place.',
+      subHeading: 'Technologies Used: React JS, Bootsrap',
+    },
+    {
+      title: 'Mobile E-shop ',
+      duration: { fromDate: '2020', toDate: '2021' },
+      description:
+        'An ecommerce application designed to sell products online wth payment system integration',
       subHeading:
-        'Build an eCommerce platform from the ground up with React, Redux, Express & MongoDB',
+        'Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.',
     },
     {
       title: 'Ecommerce Website ',
-      duration: { fromDate: '2022', toDate: '2022' },
-      description: 'Microservices with Node JS and React',
+      duration: { fromDate: '2020', toDate: '2021' },
+      description:
+        'Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe',
       subHeading:
-        'Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes.',
+        'Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.',
     },
   ];
+
   const resumeDetails = [
     <div className='resume-screen-container' key='education'>
       <ResumeHeading
-        heading={
-          'Tadeusz Kościuszko Mechanical and Electrical School Complex in Rybnik,'
-        }
-        subHeading={'Electrician Technician'}
-        fromDate={'2008'}
+        heading={'University of Legon Accra, Ghana'}
+        subHeading={'BACHELOR OF SCIENCE INFORMATION TECHNOLOGY'}
+        fromDate={'2014'}
+        toDate={'2018'}
+      />
+
+      <ResumeHeading
+        heading={'National Youth Service Corps'}
+        subHeading={'Ministry Of Science And Technogy. Uyo Akwa Ibom State'}
+        fromDate={'2019'}
+        toDate={'2020'}
+      />
+      <ResumeHeading
+        heading={'High School '}
+        subHeading={'Command Secondary School Mbiri'}
+        fromDate={'2007'}
         toDate={'2012'}
       />
     </div>,
@@ -98,20 +117,31 @@ export default function Resume(props) {
     <div className='resume-screen-container' key='work-experience'>
       <div className='experience-container'>
         <ResumeHeading
-          heading={'Piotrek Technoloy'}
-          subHeading={'Electric / Energetic'}
+          heading={'Ehizeex Technoloy'}
+          subHeading={'FULL STACK DEVELOPER INTERN'}
           fromDate={'2021'}
           toDate={'Present'}
         />
         <div className='experience-description'>
           <span className='resume-description-text'>
-            Electromechanic at Doosan Babcock Energy Polska. Work in departament
-            control and measurement equipment and automatics
+            Currently working as MERN stack web and mobile developer and also an
+            online instructor on udemy.
           </span>
         </div>
         <div className='experience-description'>
           <span className='resume-description-text'>
-            Work in polish energetic group, handling energetic block.
+            - Developed an ecommerce website for client with the dashboard for
+            managing the products, managing reviews, users, payment etc. .
+          </span>
+          <br />
+          <span className='resume-description-text'>
+            - Integrated the web app with backend services to create new user
+            onboarding application with dynamic form content.{' '}
+          </span>
+          <br />
+          <span className='resume-description-text'>
+            - I stretch my mental capacity to develope UI as per the given
+            designs.
           </span>
           <br />
         </div>
@@ -152,19 +182,18 @@ export default function Resume(props) {
     </div>,
 
     /* Interests */
-
     <div className='resume-screen-container' key='interests'>
       <ResumeHeading
-        heading='Coding'
-        description='study to understand world and expand their horizons'
+        heading='Teaching'
+        description='Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing.'
       />
       <ResumeHeading
-        heading='Traveling'
-        description='Travel around the world, study languages, culture and art. '
+        heading='Music'
+        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
       />
       <ResumeHeading
-        heading='Workout'
-        description='cycling and bodybuilding for keep healthy condition.'
+        heading='Competitive Gaming'
+        description='I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most.'
       />
     </div>,
   ];
@@ -189,7 +218,11 @@ export default function Resume(props) {
         }
         key={index}
       >
-        <img className='bullet-logo' src={bullet.logoSrc} alt='oppsss' />
+        <img
+          className='bullet-logo'
+          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          alt='B'
+        />
         <span className='bullet-label'>{bullet.label}</span>
       </div>
     ));
@@ -215,11 +248,11 @@ export default function Resume(props) {
 
   return (
     <div
-      className='resume-container screen-container fade-in }'
+      className='resume-container screen-container fade-in'
       id={props.id || ''}
     >
       <div className='resume-content'>
-        <ScreenHeading title={'Resume'} subHeading={'Bio Details'} />
+        <ScreenHeading title={'Resume'} subHeading={'My formal Bio Details'} />
         <div className='resume-card'>
           <div className='resume-bullets'>
             <div className='bullet-container'>
@@ -227,9 +260,12 @@ export default function Resume(props) {
               <div className='bullets'>{getBullets()}</div>
             </div>
           </div>
+
           <div className='resume-bullet-details'>{getResumeScreens()}</div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Resume;
