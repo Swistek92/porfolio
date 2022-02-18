@@ -15,7 +15,7 @@
 }
 
 .resume-bullets {
-  box-shadow: 15px 0 9px -15px #1f2235;
+  box-shadow: 15px 0 9px -15px var(--green1);
   height: 100%;
   width: 320px;
 }
@@ -58,7 +58,9 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  background-color: #1f2235;
+  background-color: var(--blue);
+  opacity: 50%;
+  color: var(--white);
   height: 40px;
   margin: 15px 0;
   padding: 0 8px;
@@ -82,12 +84,13 @@
   width: 34px;
   height: 100%;
   z-index: 1;
-  background-color: #1f2235;
+  background-color: var(--blue);
+  opacity: 50%;
   position: absolute;
 }
 
 .selected-bullet {
-  color: var(--white);
+  color: var(--grey);
   width: 100%;
 }
 
@@ -111,7 +114,8 @@
 }
 
 .resume-main-heading span {
-  color: var(--dark-orange);
+  color: var(--white);
+  opacity: 40%;
   font-size: 16px;
   font-family: 'Poppins SemiBold';
 }
@@ -127,13 +131,13 @@
   width: 15px;
   top: 5px;
   border-radius: 50%;
-  background-color: #ff5823;
+  background-color: var(--blue);
+  opacity: 90%;
 }
 
 .resume-sub-heading {
   font-size: 14px;
   font-family: 'Poppins SemiBold';
-  color: var(--black);
   margin: 10px 0 0 0;
 }
 
@@ -143,7 +147,8 @@
 }
 
 .heading-date {
-  background-color: #ff5823;
+  background-color: var(--green2);
+  opacity: 30%;
   padding: 4px 12px;
   font-size: 14px;
   border-radius: 14px;
@@ -169,20 +174,22 @@
   position: relative;
   height: 15px;
   width: 70%;
-  background-color: #ff5823;
+  background-color: rgba(128, 128, 128, 0.404);
 }
 
 .skill-percentage .active-percentage-bar {
   height: 15px;
   transition: 0.8s ease;
   position: absolute;
-  background-color: #1f2235;
+  background-color: var(--green2);
+  opacity: 50%;
 }
 
 .skill-parent span {
   font-family: 'Poppins Bold';
   font-size: 16px;
-  color: #ff5823;
+
+  color: var(--green1);
 }
 
 /* IPAD PRO RESPONSIVENESS */

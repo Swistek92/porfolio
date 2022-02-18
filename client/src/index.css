@@ -53,7 +53,7 @@
 
 body {
   background-image: url('./images/space.jpg');
-  background-image: cover;
+  background-image: contain;
   margin: 0;
   overflow-y: overlay;
   font-family: 'Poppins Regular';
