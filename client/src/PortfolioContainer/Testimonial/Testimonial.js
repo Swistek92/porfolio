@@ -7,10 +7,10 @@ import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
 import './Testimonial.css';
-import lady from '../../../src/img/Testimonial/lady.png';
-import mike from '../../../src/img/Testimonial/mike.png';
-import man from '../../../src/img/Testimonial/man.png';
-import shape from '../../../src/img/Testimonial/shape-bg.png';
+import lady from '../../assets/Testimonial/alien.jpg';
+import mike from '../../assets/Testimonial/alien.jpg';
+import man from '../../assets/Testimonial/alien.jpg';
+import daisy from '../../assets/Testimonial/alien.jpg';
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -62,9 +62,10 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      ტექსტის ნაგლეჯს იმეორებენ ხოლმე, ამიტომ ეს პირველი
+                      ნამდვილი გენერატორია. იგი რთული და მართებული სტრუქტურის
+                      წინადადებების ასაწყობად 200-მდე ლათინური სიტყვისგან
+                      შემდგარ ლექსიკონს იყენე
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -86,9 +87,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={lady} alt='opp' />
+                    <h5> არასოდეს </h5>
+                    <p>სიტყვების </p>
                   </div>
                 </div>
               </div>
@@ -98,9 +99,11 @@ export default function Testimonial(props) {
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      It was nice hiring this guy for my e-commerce project.He
-                      delivered even more than i can imagine. I recommend him
-                      for you.
+                      평화통일정책의 수립에 관한 대통령의 자문에 응하기 위하여
+                      민주평화통일자문회의를 둘 수 있다. 모든 국민은 언론·출판의
+                      자유와 집회·결사의 자유를 가진다. 국가는 균형있는
+                      국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고.
+                      그 정치적 중립성은 준수된다.
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -122,20 +125,24 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={mike} alt='no internet connection'></img>
-                    <h5>Mikel</h5>
-                    <p>CEO MikeTech</p>
+                    <img src={mike} alt='opp' />
+                    <h5> 간첩죄의 </h5>
+                    <p>신체의</p>
                   </div>
                 </div>
               </div>
+
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      When he delivered my job, my head spinned, it was so nice
-                      and he implemented every functionality i requested for.
-                      Thank you.
+                      تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                      العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم
+                      ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات
+                      محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع
+                      مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                      مقاطع
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -157,20 +164,21 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <img src={man} alt='opp' />
+                    <h5> مضة في نص لوريم إيبسو </h5>
+                    <p>إيبسوم </p>
                   </div>
                 </div>
               </div>
+
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
                       <i className='fa fa-quote-left' />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      Вел вулпутате инцоррупте ин, долор импердиет елаборарет ад
+                      еум. Но яуи молестие перицулис омиттантур, цлита нумяуам
+                      цу пер, легере путент детерруиссет ан сеа
                       <i className='fa fa-quote-right' />
                     </p>
                     <ul className='stars list-unstyled'>
@@ -192,9 +200,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src={man} alt='no internet connection'></img>
-                    <h5>John Smith</h5>
-                    <p>Bnaker</p>
+                    <img src={daisy} alt='opp' />
+                    <h5> утрояуе салутанди </h5>
+                    <p>оффициис </p>
                   </div>
                 </div>
               </div>
