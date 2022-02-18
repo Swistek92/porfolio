@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  background-color: #1f2235;
+  background-color: var(--blue);
   height: 40px;
   margin: 15px 0;
   padding: 0 8px;
@@ -70,7 +70,7 @@
 .bullet-label {
   font-size: 14px;
   white-space: nowrap;
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
 }
 
 .bullet-logo {
@@ -82,7 +82,7 @@
   width: 34px;
   height: 100%;
   z-index: 1;
-  background-color: #1f2235;
+  background-color: var(--blue);
   position: absolute;
 }
 
@@ -111,9 +111,9 @@
 }
 
 .resume-main-heading span {
-  color: var(--dark-orange);
+  color: var(--white);
   font-size: 16px;
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
 }
 
 .experience-description {
@@ -127,12 +127,12 @@
   width: 15px;
   top: 5px;
   border-radius: 50%;
-  background-color: #ff5823;
+  background-color: var(--blue);
 }
 
 .resume-sub-heading {
   font-size: 14px;
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
   color: var(--black);
   margin: 10px 0 0 0;
 }
@@ -180,7 +180,7 @@
 }
 
 .skill-parent span {
-  font-family: "Poppins Bold";
+  font-family: 'Poppins Bold';
   font-size: 16px;
   color: #ff5823;
 }
